@@ -41,7 +41,7 @@ export const Header = ({ onSearch }: HeaderProps) => {
         <div className="flex items-center gap-3 sm:gap-8">
           <Link to="/" className="flex items-center gap-2">
             <span className="text-lg sm:text-2xl font-bold">
-              Prime<span className="text-primary">Vício</span>
+              Cine<span className="text-primary">Movie</span>
             </span>
           </Link>
 
