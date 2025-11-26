@@ -100,138 +100,11 @@ export type Database = {
           },
         ]
       }
-      affiliate_clicks: {
-        Row: {
-          affiliate_code: string
-          clicked_at: string
-          id: string
-          ip_address: string | null
-          user_agent: string | null
-        }
-        Insert: {
-          affiliate_code: string
-          clicked_at?: string
-          id?: string
-          ip_address?: string | null
-          user_agent?: string | null
-        }
-        Update: {
-          affiliate_code?: string
-          clicked_at?: string
-          id?: string
-          ip_address?: string | null
-          user_agent?: string | null
-        }
-        Relationships: []
-      }
-      affiliate_conversions: {
-        Row: {
-          affiliate_id: string
-          amount: number
-          conversion_type: string
-          created_at: string | null
-          id: string
-          user_id: string
-        }
-        Insert: {
-          affiliate_id: string
-          amount: number
-          conversion_type: string
-          created_at?: string | null
-          id?: string
-          user_id: string
-        }
-        Update: {
-          affiliate_id?: string
-          amount?: number
-          conversion_type?: string
-          created_at?: string | null
-          id?: string
-          user_id?: string
-        }
-        Relationships: []
-      }
-      affiliate_referrals: {
-        Row: {
-          affiliate_id: string
-          created_at: string
-          id: string
-          referred_user_id: string
-        }
-        Insert: {
-          affiliate_id: string
-          created_at?: string
-          id?: string
-          referred_user_id: string
-        }
-        Update: {
-          affiliate_id?: string
-          created_at?: string
-          id?: string
-          referred_user_id?: string
-        }
-        Relationships: []
-      }
-      affiliate_settings: {
-        Row: {
-          created_at: string | null
-          daily_ads_reward: number
-          id: string
-          per_ad_reward: number
-          updated_at: string | null
-          vip_commission_percentage: number
-        }
-        Insert: {
-          created_at?: string | null
-          daily_ads_reward?: number
-          id?: string
-          per_ad_reward?: number
-          updated_at?: string | null
-          vip_commission_percentage?: number
-        }
-        Update: {
-          created_at?: string | null
-          daily_ads_reward?: number
-          id?: string
-          per_ad_reward?: number
-          updated_at?: string | null
-          vip_commission_percentage?: number
-        }
-        Relationships: []
-      }
-      affiliate_withdrawals: {
-        Row: {
-          affiliate_id: string
-          amount: number
-          created_at: string | null
-          id: string
-          pix_key: string
-          pix_name: string
-          status: string
-          updated_at: string | null
-        }
-        Insert: {
-          affiliate_id: string
-          amount: number
-          created_at?: string | null
-          id?: string
-          pix_key: string
-          pix_name: string
-          status?: string
-          updated_at?: string | null
-        }
-        Update: {
-          affiliate_id?: string
-          amount?: number
-          created_at?: string | null
-          id?: string
-          pix_key?: string
-          pix_name?: string
-          status?: string
-          updated_at?: string | null
-        }
-        Relationships: []
-      }
+
+
+
+
+
       api_cache: {
         Row: {
           cache_key: string
@@ -400,14 +273,10 @@ export type Database = {
             | Database["public"]["Enums"]["ad_preference_type"]
             | null
           ads_watched_count: number
-          affiliate_balance: number | null
-          affiliate_code: string | null
           created_at: string | null
           email: string | null
           id: string
-          is_affiliate: boolean | null
           is_vip: boolean | null
-          referred_by: string | null
           updated_at: string | null
           vip_created_at: string | null
           vip_expires_at: string | null
@@ -419,14 +288,10 @@ export type Database = {
             | Database["public"]["Enums"]["ad_preference_type"]
             | null
           ads_watched_count?: number
-          affiliate_balance?: number | null
-          affiliate_code?: string | null
           created_at?: string | null
           email?: string | null
           id: string
-          is_affiliate?: boolean | null
           is_vip?: boolean | null
-          referred_by?: string | null
           updated_at?: string | null
           vip_created_at?: string | null
           vip_expires_at?: string | null
@@ -438,14 +303,10 @@ export type Database = {
             | Database["public"]["Enums"]["ad_preference_type"]
             | null
           ads_watched_count?: number
-          affiliate_balance?: number | null
-          affiliate_code?: string | null
           created_at?: string | null
           email?: string | null
           id?: string
-          is_affiliate?: boolean | null
           is_vip?: boolean | null
-          referred_by?: string | null
           updated_at?: string | null
           vip_created_at?: string | null
           vip_expires_at?: string | null
