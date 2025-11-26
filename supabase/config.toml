@@ -1,0 +1,13 @@
+project_id = "klxeoldqgpqerzwimxwt"
+
+[functions.genre-movies]
+verify_jwt = false
+
+[functions.media-with-genres]
+verify_jwt = false
+
+[functions.search-media]
+verify_jwt = false
+
+[functions.ad-config]
+verify_jwt = false
